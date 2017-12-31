@@ -34,6 +34,10 @@
             color: #444444;
         }
         
+        .paged-element-hidden.animated {
+            animation-name: none !important;
+        }
+        
         .content {
             line-height: 2;
             color: #444444;
@@ -101,6 +105,7 @@
                                     scrollTop: offsetTop - navSectionHeight
                                 }, 300);
                             }
+                            
                             // now find the element itself, which has the name as a css class
                             if (item.length) { 
                                 return {
@@ -153,6 +158,10 @@
         */       }
             });
         });
+        ////////////////////////////////////
+// animate.js
+document.write('<link href="css/animate.min.css" rel="stylesheet">');
+////////////////////////////////////
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
